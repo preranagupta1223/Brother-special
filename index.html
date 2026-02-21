@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Brother 💙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 360px;
+            padding: 25px;
+            border-radius: 22px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            animation: pop 1s ease;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.85);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #66a6ff;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 38px;
+            margin: 12px 0;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.25); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 25px;
+            background: #66a6ff;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #4e8ef7;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- 🔹 Brother Photo -->
+        <img src="brother.jpeg" alt="My Brother">
+
+        <h1>Hey Brother 💙</h1>
+
+        <div class="heart">💙</div>
+
+        <p>
+            You are my strength,  
+            my best friend,  
+            and my forever supporter 🌟
+        </p>
+
+        <p>
+            I’m lucky to have you 😊
+        </p>
+
+        <button onclick="playMusic()">Tap for a Surprise 🎵</button>
+
+        <!-- 🔹 Audio -->
+        <audio id="music">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        function playMusic() {
+            document.getElementById("music").play();
+        }
+    </script>
+
+</body>
+</html>
