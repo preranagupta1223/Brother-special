@@ -1,7 +1,7 @@
 💙 Brother's Digital Greeting Card
 A beautiful, responsive, and animated digital greeting card built with HTML5, CSS3, and JavaScript. This project features smooth entry animations, a pulsing heartbeat effect, and an interactive music trigger.
 
-✨ Features
+✨ Features:
 Smooth Animations: Uses CSS @keyframes for a "pop-in" entry effect.
 
 Animated Heart: A pulsing heartbeat effect using CSS transforms.
